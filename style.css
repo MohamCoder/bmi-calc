@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@media (max-width: 432px) {
+    .wrap{
+        white-space:nowrap;
+    }
+}
+@media (max-width: 425px) {
+    .wrap{
+        white-space:normal;
+    }
+}
+@media (max-width:1486px) {
+    .mtw1{
+        margin-top: 9rem;
+    }
+}
+@media (max-width: 639px) {
+    .mtw1{
+        margin-top: 3rem;
+    }
+}

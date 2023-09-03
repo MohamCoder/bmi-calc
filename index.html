@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="sm:ml-[16%] ml-[5%] inline-block mt-8 font-bold text-5xl block whitespace-nowrap">
+        <span class="text-green-700">B</span><span class="text-yellow-600">M</span><span class="text-red-700">I</span>
+        Calculator
+    </nav>
+    <main class="flex flex-col justify-center sm:justify-evenly mt-[5rem] h-[700px] bg-gray-300 w-[85%] sm:w-[65%] lg:w-[45%] mx-auto rounded-xl shadow-lg mb-10">
+        <div class="flex flex-col sm:flex-row">
+        <form class="sm:w-[75%] w-full inline-block mt-[4rem] font-bold sm:text-4xl text-2xl flex space-y-6 flex-col items-center">
+            <section class="ml-8 sm:whitespace-normal wrap">
+                my weight is <input type="text" id="weight" placeholder="weight" class=" w-[6.009rem] sm:w-[8.21rem] sm:text-3xl text-2xl h-10 rounded-lg outline-gray-400 placeholder:p-2">
+                <select name="chose weight unit" title="weight unit" id="select w" class="select select-bordered w-24 text-2xl">
+                    <option value="kg">kg</option>
+                    <option value="lb">lb</option>
+                </select>
+            </section>
+            <section class="ml-8 sm:whitespace-normal wrap">
+                my height is &#160;<input type="text" id="height" placeholder="height" class=" w-24 sm:w-32 sm:text-3xl text-2xl h-10 rounded-lg outline-gray-400 placeholder:p-2">
+                    <select name="chose height unit" title="height unit" id="select h" class="select select-bordered w-24 text-2xl">
+                        <option value="cm">cm</option>
+                        <option value="ft">ft</option>
+                    </select>
+            </section>
+        </form>
+        <div class="flex justify-center h-full sm:w-[30%] w-full">
+        <button class="btn btn-lg btn-primary mx-auto mt-[5.8rem] mtw1 lg:scale-100 sm:scale-[.9] sm:mr-9 scale-100" id="btn">Calculate</button>
+        </div>
+        </div>
+        <div class="radial-progress font-bold text-2xl rotate-[270deg] m-auto transition-all duration-200"
+            style="--value:0;--size:0rem" id="rad">
+            <div class="text-gray-800 rotate-[90deg] translate-x-5 whitespace-nowrap" id="rad text">enter your status</div>
+        </div>
+    </main>
+    <hr>
+    <div class="container sm:mx-auto ml-[2%] py-10 font-semibold text-xl">
+        <h1 class="text-4xl font-weight-bold mb-5">Health Tips</h1>
+        <div class="faq">
+            <div class="question">
+                <h2 class="font-weight-bold text-3xl mb-5">How to Calculate BMI</h2>
+                <p>You can calculate your BMI using an online calculator or by following this formula:</p>
+                <p>BMI = weight in kilograms / height in meters squared</p>
+            </div>
+            <br>
+            <div class="question">
+                <h2 class="font-weight-bold text-3xl mb-5">What is the normal BMI range?</h2>
+                <p>The normal BMI range for adults is 18.5 to 24.9. A BMI of 25 to 29.9 is considered overweight, and a BMI
+                    of 30 or higher is considered obese.</p>
+            </div>
+            <br>
+            <div class="question">
+                <h2 class="font-weight-bold text-3xl mb-5">What are the health risks of being overweight or obese?</h2>
+                <p>Overweight and obesity are associated with an increased risk of many chronic diseases, including heart
+                    disease, stroke, type 2 diabetes, and some types of cancer.</p>
+            </div>
+            <br>
+            <div class="question">
+                <h2 class="font-weight-bold text-3xl mb-5">What can I do to lose weight or maintain a healthy weight?</h2>
+                <p>There are many things you can do to lose weight or maintain a healthy weight, including:</p>
+                <ul class="list-disc list-inside">
+                    <li>Eating a healthy diet</li>
+                    <li>Being physically active</li>
+                    <li>Making small changes to your lifestyle, such as drinking less sugary drinks and eating more fruits
+                        and vegetables</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-blue-400 text-green-400 text-yellow-400 text-red-400"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
