@@ -27,12 +27,14 @@ btn.onclick = () => {
     }
 
     if (isNaN(heightVal) || isNaN(weightVal)) {
-        radText.textContent = `Please enter valid numbers for height and weight`;
+        radText.textContent = `please enter your status`;
+        rad.style = `--value: 0;--size: 0rem`;
     } else if (
         typeof heightVal === "string" &&
         heightVal.trim().length === 0
     ) {
         radText.textContent = `enter your status`;
+        rad.style = `--value: 0;--size: 0rem`;
     } else {
         const res = calcBMI(heightVal, weightVal);
         res.weightType();
